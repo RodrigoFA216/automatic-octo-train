@@ -144,7 +144,7 @@ if(width>=501){
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": .8,
                 "random": false,
                 "anim": {
                     "enable": true,

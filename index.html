@@ -15,18 +15,106 @@
     <div id="particles-js"></div>
     <br>
     <div class="card text-center" id="cuerpo">
-        <div class="card-header" id="inicio">
-            Featured
-        </div>
+        <!--<div class="card-header" id="inicio">
+            
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://esime.mmendiola.org/clase01/">Encuadre didáctico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Departamental 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Departamental 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Departamental 3</a>
+                </li>
+            </ul>
+        </div>-->
+        <ul class="nav nav-tabs justify-content-center" id="navegacion">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Encuadre Didáctico</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Departamental 1</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Departamental 2</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Departamental 3</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <img src="./lugar-mod.png" alt="EsimeCul" id="esime">
+            <h5><i>ags 2021 - ene 2022</i></h5>
+            <h3 class="card-title">Metodología de la investigación</h3>
+            <div class="descripcion">
+                <p class="card-text">
+                    La asignatura de Metodología de la Investigación, proporciona a los estudiantes, los principios
+                    teóricos
+                    y procedimientos metodológicos para lograr ese conocimiento, les facilita el estudio de las
+                    asignaturas
+                    propias de la especialidad, les enseña el camino para diseñar un proyecto científico, técnico o
+                    académico, les proporciona herramientas necesarias para la comprensión y redacción del escrito
+                    científico y tecnológico
+                    y les muestra la ruta para el análisis de problemas y resolución de los mismos de manera
+                    sistemática. He
+                    ahí
+                    la importancia de esta materia en el semestre en que ha sido ubicada, relacionándose de manera
+                    antecedente con las
+                    asignaturas de ciencias básicas y de manera consecuente con las asignaturas de las ciencias
+                    aplicadas,
+                    justamente
+                    cuando el estudiante se halla en condiciones de construir y reconstruir conocimientos por sus
+                    propios
+                    medios.
+                </p>
+            </div>
         </div>
         <div class="card-footer text-muted">
             <!-- Contador de visitas -->
             <a href="#inicio" title="Contador De Visitas ">
-                    <img style="border: 0px solid; display: inline;" alt="contador de visitas"
-                        src="https://websmultimedia.com/contador-de-visitas.php?id=234"></a>
+                <img style="border: 0px solid; display: inline;" alt="contador de visitas"
+                    src="https://websmultimedia.com/contador-de-visitas.php?id=234"></a>
             <!-- Fin Contador de visitas -->
         </div>
     </div>
@@ -51,11 +139,46 @@
             padding: 20px 30px;
             position: relative;
             z-index: 100;
-            background-color: #ffffff4b;
+            background-color: #ffffffbd;
         }
 
         body {
             background-color: #40610c;
+        }
+
+        .descripcion {
+            text-align: justify;
+            padding: 30px;
+        }
+
+
+
+        .nav-item {
+            color: #000000;
+        }
+
+        .nav-item:hover {
+            color: #272727;
+        }
+
+        .nav-link {
+            color: #000000;
+        }
+
+        .nav-link:hover {
+            color: #272727;
+        }
+
+        @media (max-width:660px) {
+            .descripcion {
+                padding: 0px;
+            }
+        }
+
+        @media (max-width:450px) {
+            #esime {
+                width: 50vmin;
+            }
         }
     </style>
 </body>
